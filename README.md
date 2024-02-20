@@ -1,1 +1,8 @@
 # homework7
+
+**Project Introduction**
+
+
+
+I used the guest pattern to create an example of a book borrowing system in a RIT student library. I could define different operations as guests, such as "borrow" and "return books" operations, while books and students could be used as elements. This design allows us to easily add more operations without modifying the Book and Student classes. Take the example I wrote as an example. First, define an Element interface and the Book class that implements it. Then, define the Visitor interface and the Borrow and Return visitors that implement this interface. Finally, create some Book instances and use the Borrow and Return visitors. In this example, the Book class implements the Element interface, indicating that it can accept visitors. The Borrow and Return classes implement the Visitor interface and represent different operations. When a Book object accepts a visitor, it calls the visitor's visitBook method, passing itself as a parameter and allowing the visitor to operate on it.
+Through this assignment, I learned that the visitor mode can help me easily add new operations in the future, such as "find books" or "book books". I only need to add more classes that implement the Visitor interface without modifying the Book class or other existing operations. There are visitor categories. This achieves operational flexibility and scalability while maintaining the stability of the object structure.
